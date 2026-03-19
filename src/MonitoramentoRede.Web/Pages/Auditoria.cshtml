@@ -1,0 +1,34 @@
+@page
+@model MonitoramentoRede.Web.Pages.AuditoriaModel
+@{
+    ViewData["Title"] = "Auditoria";
+}
+
+<div class="painel mb-4">
+    <form method="get" class="row g-3">
+        <div class="col-md-4"><label class="form-label">Usuário</label><input asp-for="Filtro.Usuario" class="form-control" /></div>
+        <div class="col-md-4"><label class="form-label">Ação</label><input asp-for="Filtro.Acao" class="form-control" /></div>
+        <div class="col-md-4 d-flex align-items-end"><button type="submit" class="btn btn-primary w-100">Filtrar</button></div>
+    </form>
+</div>
+
+<div class="painel">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead><tr><th>Data</th><th>Usuário</th><th>Ação</th><th>Entidade</th><th>Sucesso</th><th>Origem</th></tr></thead>
+            <tbody>
+            @foreach (var item in Model.Resultado.Itens)
+            {
+                <tr>
+                    <td>@item.DataEventoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.UsuarioNome</td>
+                    <td>@item.Acao</td>
+                    <td>@item.Entidade</td>
+                    <td>@(item.Sucesso ? "Sim" : "Não")</td>
+                    <td>@item.EnderecoIp</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

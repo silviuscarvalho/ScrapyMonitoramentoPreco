@@ -1,0 +1,76 @@
+@page
+@using MonitoramentoRede.Dominio.Enums
+@model MonitoramentoRede.Web.Pages.Dispositivos.IndexModel
+@{
+    ViewData["Title"] = "Dispositivos";
+}
+
+<div class="painel mb-4">
+    <form method="get" class="row g-3">
+        <div class="col-md-3">
+            <label class="form-label">IP</label>
+            <input asp-for="Filtro.Ip" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">MAC</label>
+            <input asp-for="Filtro.Mac" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Hostname</label>
+            <input asp-for="Filtro.Hostname" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Status</label>
+            <select asp-for="Filtro.Status" class="form-select" asp-items="Html.GetEnumSelectList<StatusDispositivo>()">
+                <option value="">Todos</option>
+            </select>
+        </div>
+        <div class="col-md-1 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+        </div>
+    </form>
+</div>
+
+<div class="painel">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>Hostname</th>
+                    <th>IP</th>
+                    <th>MAC</th>
+                    <th>Status</th>
+                    <th>Última detecção</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Resultado.Itens)
+            {
+                <tr>
+                    <td>@item.Hostname</td>
+                    <td>@item.Ip</td>
+                    <td>@item.Mac</td>
+                    <td>@item.Status</td>
+                    <td>@item.UltimaDeteccaoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                    <td><a asp-page="/Dispositivos/Detalhes" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Detalhes</a></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-between">
+        <span>Total: @Model.Resultado.TotalRegistros</span>
+        <div>
+            @if (Model.Resultado.Pagina > 1)
+            {
+                <a class="btn btn-sm btn-outline-secondary" asp-route-Pagina="@(Model.Resultado.Pagina - 1)" asp-route-Ip="@Model.Filtro.Ip" asp-route-Mac="@Model.Filtro.Mac" asp-route-Hostname="@Model.Filtro.Hostname" asp-route-Status="@Model.Filtro.Status">Anterior</a>
+            }
+            <span class="mx-2">Página @Model.Resultado.Pagina de @Model.Resultado.TotalPaginas</span>
+            @if (Model.Resultado.Pagina < Model.Resultado.TotalPaginas)
+            {
+                <a class="btn btn-sm btn-outline-secondary" asp-route-Pagina="@(Model.Resultado.Pagina + 1)" asp-route-Ip="@Model.Filtro.Ip" asp-route-Mac="@Model.Filtro.Mac" asp-route-Hostname="@Model.Filtro.Hostname" asp-route-Status="@Model.Filtro.Status">Próxima</a>
+            }
+        </div>
+    </div>
+</div>

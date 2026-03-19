@@ -1,0 +1,134 @@
+:root {
+  --cor-fundo: #eef3f7;
+  --cor-painel: #ffffff;
+  --cor-primaria: #16324f;
+  --cor-secundaria: #2d6a8c;
+  --cor-suave: #6b7b88;
+  --cor-borda: #dce3ea;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #f8fbff 0%, var(--cor-fundo) 55%);
+  color: #1c2732;
+}
+
+.layout-admin {
+  display: flex;
+  min-height: 100vh;
+}
+
+.barra-lateral {
+  width: 260px;
+  background: linear-gradient(180deg, var(--cor-primaria), #0f2236);
+  color: #fff;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.marca-app {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.submarca {
+  color: rgba(255, 255, 255, .7);
+}
+
+.menu-lateral {
+  display: grid;
+  gap: .5rem;
+  margin: 2rem 0;
+}
+
+.menu-lateral a {
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1rem;
+  border-radius: .85rem;
+}
+
+.menu-lateral a:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 1.5rem 2rem;
+}
+
+.titulo-pagina {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.texto-suave {
+  color: var(--cor-suave);
+}
+
+.conteudo-pagina {
+  margin-top: 1rem;
+}
+
+.painel,
+.cartao-resumo {
+  background: var(--cor-painel);
+  border: 1px solid var(--cor-borda);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 14px 40px rgba(27, 48, 74, .08);
+}
+
+.cartao-resumo span {
+  display: block;
+  color: var(--cor-suave);
+  margin-bottom: .5rem;
+}
+
+.cartao-resumo strong {
+  font-size: 2rem;
+}
+
+.progress {
+  height: .7rem;
+  border-radius: 999px;
+  background: #e7edf3;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--cor-secundaria), #4ca2cb);
+}
+
+.fundo-login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #16324f, #2d6a8c);
+}
+
+.card-login {
+  width: min(420px, 92vw);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .layout-admin {
+    flex-direction: column;
+  }
+
+  .barra-lateral {
+    width: 100%;
+  }
+
+  .conteudo-principal {
+    padding: 1rem;
+  }
+}

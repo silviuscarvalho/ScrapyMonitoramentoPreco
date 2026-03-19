@@ -1,0 +1,54 @@
+@using MonitoramentoRede.Compartilhado.Constantes
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MonitoramentoRede</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="layout-admin">
+        <aside class="barra-lateral">
+            <div>
+                <div class="marca-app">MonitoramentoRede</div>
+                <div class="submarca">DNS + fluxo</div>
+            </div>
+            <nav class="menu-lateral">
+                <a asp-page="/Index">Dashboard</a>
+                <a asp-page="/Dispositivos/Index">Dispositivos</a>
+                <a asp-page="/Dns">DNS</a>
+                <a asp-page="/Fluxos">Fluxos</a>
+                <a asp-page="/Alertas">Alertas</a>
+                <a asp-page="/Auditoria">Auditoria</a>
+                @if (User.IsInRole(PerfisSistema.Administrador))
+                {
+                    <a asp-page="/Administracao/Usuarios/Index">Usuários</a>
+                    <a asp-page="/Administracao/Configuracoes/Index">Configurações</a>
+                }
+            </nav>
+            <form method="post" asp-page="/Conta/Login" asp-page-handler="Sair">
+                <button type="submit" class="btn btn-outline-light w-100">Sair</button>
+            </form>
+        </aside>
+        <main class="conteudo-principal">
+            <header class="topo-pagina">
+                <div>
+                    <h1 class="titulo-pagina">@ViewData["Title"]</h1>
+                    <div class="texto-suave">@User.Identity?.Name</div>
+                </div>
+            </header>
+            <section class="conteudo-pagina">
+                @RenderBody()
+            </section>
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

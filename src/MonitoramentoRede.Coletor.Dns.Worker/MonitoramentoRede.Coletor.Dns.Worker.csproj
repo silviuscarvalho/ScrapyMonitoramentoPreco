@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Coletor.Dns.Worker</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MonitoramentoRede.Coletor.Dns.Worker-eec8a822-b764-49c0-96ef-599ba6d9c82c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoramentoRede.Compartilhado\MonitoramentoRede.Compartilhado.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Aplicacao\MonitoramentoRede.Aplicacao.csproj" />
+  </ItemGroup>
+</Project>

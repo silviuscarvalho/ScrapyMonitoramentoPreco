@@ -1,0 +1,13 @@
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\bin\Debug\net8.0\MonitoramentoRede.Compartilhado.deps.json
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\bin\Debug\net8.0\MonitoramentoRede.Compartilhado.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\bin\Debug\net8.0\MonitoramentoRede.Compartilhado.pdb
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\bin\Debug\net8.0\MonitoramentoRede.Compartilhado.xml
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.AssemblyInfoInputs.cache
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.AssemblyInfo.cs
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.csproj.CoreCompileInputs.cache
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\refint\MonitoramentoRede.Compartilhado.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.xml
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\MonitoramentoRede.Compartilhado.pdb
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Compartilhado\obj\Debug\net8.0\ref\MonitoramentoRede.Compartilhado.dll

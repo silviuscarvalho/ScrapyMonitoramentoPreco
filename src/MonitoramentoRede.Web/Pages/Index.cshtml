@@ -1,0 +1,98 @@
+@page
+@model MonitoramentoRede.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row g-3 mb-4" id="cards-dashboard">
+    <div class="col-md-3">
+        <div class="cartao-resumo">
+            <span>Dispositivos ativos</span>
+            <strong id="card-dispositivos">@Model.Resumo.TotalDispositivosAtivos</strong>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="cartao-resumo">
+            <span>DNS últimas 24h</span>
+            <strong id="card-dns">@Model.Resumo.TotalEventosDns24h</strong>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="cartao-resumo">
+            <span>Fluxos últimas 24h</span>
+            <strong id="card-fluxos">@Model.Resumo.TotalFluxos24h</strong>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="cartao-resumo">
+            <span>Alertas em aberto</span>
+            <strong id="card-alertas">@Model.Resumo.TotalAlertasAbertos</strong>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-7">
+        <div class="painel">
+            <h2 class="h5 mb-3">Atividades recentes</h2>
+            <div class="table-responsive">
+                <table class="table table-sm align-middle" id="tabela-atividades">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Usuário</th>
+                            <th>Ação</th>
+                            <th>Entidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.Resumo.AtividadesRecentes)
+                    {
+                        <tr>
+                            <td>@item.DataEventoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@item.UsuarioNome</td>
+                            <td>@item.Acao</td>
+                            <td>@item.Entidade</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="painel mb-4">
+            <h2 class="h5 mb-3">Top domínios</h2>
+            <div id="grafico-dominios">
+            @foreach (var item in Model.Resumo.TopDominios)
+            {
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between"><span>@item.Dominio</span><span>@item.Total</span></div>
+                    <div class="progress"><div class="progress-bar" style="width:@Model.CalcularPercentualDominio(item.Total)%"></div></div>
+                </div>
+            }
+            </div>
+        </div>
+        <div class="painel">
+            <h2 class="h5 mb-3">Top dispositivos por tráfego</h2>
+            <div id="grafico-trafego">
+            @foreach (var item in Model.Resumo.TopDispositivosTrafego)
+            {
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between"><span>@item.Dispositivo</span><span>@item.TotalBytes</span></div>
+                    <div class="progress"><div class="progress-bar bg-success" style="width:@Model.CalcularPercentualTrafego(item.TotalBytes)%"></div></div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.monitoramentoDashboard = {
+            resumoUrl: '@Url.Page("/Index", "Resumo")',
+            hubUrl: '/hubs/dashboard'
+        };
+    </script>
+}

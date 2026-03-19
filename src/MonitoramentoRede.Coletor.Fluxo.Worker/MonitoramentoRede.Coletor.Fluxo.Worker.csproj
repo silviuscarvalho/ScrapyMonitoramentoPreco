@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Coletor.Fluxo.Worker</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MonitoramentoRede.Coletor.Fluxo.Worker-984a072d-f555-4afb-bf1d-861ce0f71f9c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoramentoRede.Compartilhado\MonitoramentoRede.Compartilhado.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Aplicacao\MonitoramentoRede.Aplicacao.csproj" />
+  </ItemGroup>
+</Project>

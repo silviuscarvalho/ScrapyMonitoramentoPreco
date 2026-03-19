@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Compartilhado</RootNamespace>
+  </PropertyGroup>
+
+</Project>

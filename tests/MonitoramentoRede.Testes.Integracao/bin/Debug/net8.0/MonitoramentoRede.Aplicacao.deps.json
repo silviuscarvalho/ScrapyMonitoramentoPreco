@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MonitoramentoRede.Aplicacao/1.0.0": {
+        "dependencies": {
+          "MonitoramentoRede.Compartilhado": "1.0.0",
+          "MonitoramentoRede.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "MonitoramentoRede.Aplicacao.dll": {}
+        }
+      },
+      "MonitoramentoRede.Compartilhado/1.0.0": {
+        "runtime": {
+          "MonitoramentoRede.Compartilhado.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MonitoramentoRede.Dominio/1.0.0": {
+        "runtime": {
+          "MonitoramentoRede.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MonitoramentoRede.Aplicacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MonitoramentoRede.Compartilhado/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MonitoramentoRede.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

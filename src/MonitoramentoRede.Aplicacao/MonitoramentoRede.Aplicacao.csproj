@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoramentoRede.Dominio\MonitoramentoRede.Dominio.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Compartilhado\MonitoramentoRede.Compartilhado.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Aplicacao</RootNamespace>
+  </PropertyGroup>
+
+</Project>

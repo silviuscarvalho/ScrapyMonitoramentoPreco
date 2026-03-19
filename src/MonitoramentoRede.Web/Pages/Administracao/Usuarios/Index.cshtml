@@ -1,0 +1,55 @@
+@page
+@model MonitoramentoRede.Web.Pages.Administracao.Usuarios.IndexModel
+@{
+    ViewData["Title"] = "Usuários";
+}
+
+<div class="row g-4">
+    <div class="col-lg-7">
+        <div class="painel">
+            <h2 class="h5 mb-3">Usuários cadastrados</h2>
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead><tr><th>Nome</th><th>Login</th><th>Perfil</th><th>Status</th><th></th></tr></thead>
+                    <tbody>
+                    @foreach (var item in Model.Usuarios)
+                    {
+                        <tr>
+                            <td>@item.Nome</td>
+                            <td>@item.Login</td>
+                            <td>@item.PerfilNome</td>
+                            <td>@(item.Ativo ? "Ativo" : "Inativo")</td>
+                            <td><a asp-page="/Administracao/Usuarios/Index" asp-route-idEdicao="@item.Id" class="btn btn-sm btn-outline-primary">Editar</a></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="painel">
+            <h2 class="h5 mb-3">@((Model.Formulario.Id > 0) ? "Editar usuário" : "Criar usuário")</h2>
+            <form method="post">
+                <input asp-for="Formulario.Id" type="hidden" />
+                <div class="mb-3"><label class="form-label">Nome</label><input asp-for="Formulario.Nome" class="form-control" /></div>
+                <div class="mb-3">
+                    <label class="form-label">Login</label>
+                    @if (Model.Formulario.Id > 0)
+                    {
+                        <input asp-for="Formulario.Login" class="form-control" readonly="readonly" />
+                    }
+                    else
+                    {
+                        <input asp-for="Formulario.Login" class="form-control" />
+                    }
+                </div>
+                <div class="mb-3"><label class="form-label">E-mail</label><input asp-for="Formulario.Email" class="form-control" /></div>
+                <div class="mb-3"><label class="form-label">Senha</label><input asp-for="Formulario.Senha" class="form-control" type="password" /></div>
+                <div class="mb-3"><label class="form-label">Perfil</label><select asp-for="Formulario.PerfilAcessoId" class="form-select"><option value="">Selecione</option>@foreach (var item in Model.Perfis) { <option value="@item.Id">@item.Nome</option> }</select></div>
+                <div class="form-check mb-3"><input asp-for="Formulario.Ativo" class="form-check-input" /><label class="form-check-label">Ativo</label></div>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </div>
+    </div>
+</div>

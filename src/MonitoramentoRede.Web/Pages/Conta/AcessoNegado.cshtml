@@ -1,0 +1,20 @@
+@page
+@model MonitoramentoRede.Web.Pages.Conta.AcessoNegadoModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Acesso negado</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100 bg-light">
+    <div class="text-center">
+        <h1 class="display-6">Acesso negado</h1>
+        <p>Seu perfil atual não possui permissão para esta funcionalidade.</p>
+        <a asp-page="/Index" class="btn btn-primary">Voltar ao dashboard</a>
+    </div>
+</body>
+</html>

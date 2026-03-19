@@ -1,0 +1,13 @@
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\bin\Debug\net8.0\MonitoramentoRede.Dominio.deps.json
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\bin\Debug\net8.0\MonitoramentoRede.Dominio.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\bin\Debug\net8.0\MonitoramentoRede.Dominio.pdb
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\bin\Debug\net8.0\MonitoramentoRede.Dominio.xml
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.AssemblyInfoInputs.cache
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.AssemblyInfo.cs
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\refint\MonitoramentoRede.Dominio.dll
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.xml
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\MonitoramentoRede.Dominio.pdb
+C:\Users\silvius.carvalho\Documents\Projetos\monitoramenteRede\src\MonitoramentoRede.Dominio\obj\Debug\net8.0\ref\MonitoramentoRede.Dominio.dll

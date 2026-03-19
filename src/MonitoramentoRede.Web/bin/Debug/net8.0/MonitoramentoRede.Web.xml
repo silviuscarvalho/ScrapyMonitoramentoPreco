@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MonitoramentoRede.Web</name>
+    </assembly>
+    <members>
+        <member name="T:MonitoramentoRede.Web.Hubs.DashboardHub">
+            <summary>
+            Hub responsável por atualizar partes do dashboard em tempo real.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.Administracao.Configuracoes.IndexModel">
+            <summary>
+            Permite administrar parâmetros operacionais do sistema.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.Administracao.Usuarios.IndexModel">
+            <summary>
+            Permite listar, criar e editar usuários internos.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.AlertasModel">
+            <summary>
+            Lista e permite resolver alertas de rede.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.AuditoriaModel">
+            <summary>
+            Exibe logs de login e operações administrativas.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.Dispositivos.DetalhesModel">
+            <summary>
+            Exibe a visão detalhada de um dispositivo monitorado.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.Dispositivos.IndexModel">
+            <summary>
+            Lista dispositivos monitorados com paginação server-side.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.DnsModel">
+            <summary>
+            Consulta eventos DNS com filtros e exportação.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.FluxosModel">
+            <summary>
+            Consulta fluxos de rede com filtros e exportação.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Web.Pages.IndexModel">
+            <summary>
+            Exibe o dashboard principal com indicadores de rede.
+            </summary>
+        </member>
+    </members>
+</doc>

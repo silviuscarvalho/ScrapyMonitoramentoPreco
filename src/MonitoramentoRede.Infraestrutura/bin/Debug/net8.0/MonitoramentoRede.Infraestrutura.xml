@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MonitoramentoRede.Infraestrutura</name>
+    </assembly>
+    <members>
+        <member name="T:MonitoramentoRede.Infraestrutura.Dados.FabricaConexaoSql">
+            <summary>
+            Cria conexões abertas para o SQL Server.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoAlertaRede">
+            <summary>
+            Implementa listagem e resolução de alertas.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoAuditoria">
+            <summary>
+            Implementa o fluxo de auditoria da aplicação.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoConfiguracaoSistema">
+            <summary>
+            Implementa leitura e atualização de parâmetros operacionais do sistema.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoDashboard">
+            <summary>
+            Consolida métricas do dashboard principal.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoDispositivo">
+            <summary>
+            Implementa o caso de uso de dispositivos.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoEventoDns">
+            <summary>
+            Implementa ingestão e consulta de eventos DNS.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoFluxoRede">
+            <summary>
+            Implementa ingestão e consulta de fluxos de rede.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Infraestrutura.Servicos.ServicoUsuario">
+            <summary>
+            Implementa autenticação e gestão de usuários do sistema.
+            </summary>
+        </member>
+    </members>
+</doc>

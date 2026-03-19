@@ -1,0 +1,42 @@
+@page
+@model MonitoramentoRede.Web.Pages.FluxosModel
+@{
+    ViewData["Title"] = "Fluxos";
+}
+
+<div class="painel mb-4">
+    <form method="get" class="row g-3">
+        <div class="col-md-2"><label class="form-label">Dispositivo</label><input asp-for="Filtro.Dispositivo" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">IP destino</label><input asp-for="Filtro.IpDestino" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">Porta</label><input asp-for="Filtro.PortaDestino" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">Protocolo</label><input asp-for="Filtro.Protocolo" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">Bytes mínimos</label><input asp-for="Filtro.BytesMinimos" class="form-control" /></div>
+        <div class="col-md-1"><label class="form-label">Início</label><input asp-for="Filtro.InicioUtc" class="form-control" type="datetime-local" /></div>
+        <div class="col-md-1 d-flex align-items-end"><button type="submit" class="btn btn-primary w-100">Filtrar</button></div>
+    </form>
+    <div class="mt-3">
+        <a asp-page="/Fluxos" asp-page-handler="Exportar" asp-route-Dispositivo="@Model.Filtro.Dispositivo" asp-route-IpDestino="@Model.Filtro.IpDestino" class="btn btn-outline-success">Exportar CSV</a>
+    </div>
+</div>
+
+<div class="painel">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead><tr><th>Data</th><th>Dispositivo</th><th>Destino</th><th>Porta</th><th>Protocolo</th><th>Bytes</th><th>Domínio</th></tr></thead>
+            <tbody>
+            @foreach (var item in Model.Resultado.Itens)
+            {
+                <tr>
+                    <td>@item.DataInicioUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.Dispositivo</td>
+                    <td>@item.IpDestino</td>
+                    <td>@item.PortaDestino</td>
+                    <td>@item.Protocolo</td>
+                    <td>@(item.BytesEnviados + item.BytesRecebidos)</td>
+                    <td>@item.DominioCorrelacionado</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

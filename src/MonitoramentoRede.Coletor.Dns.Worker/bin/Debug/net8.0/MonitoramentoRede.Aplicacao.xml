@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MonitoramentoRede.Aplicacao</name>
+    </assembly>
+    <members>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Infraestrutura.IFabricaConexaoSql">
+            <summary>
+            Cria conexões para o banco SQL Server.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IAlertaRedeRepositorio">
+            <summary>
+            Define operações de persistência de alertas de rede.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IAuditoriaRepositorio">
+            <summary>
+            Define operações de persistência para auditoria.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IConfiguracaoSistemaRepositorio">
+            <summary>
+            Define operações de persistência de configurações do sistema.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IDispositivoRepositorio">
+            <summary>
+            Define operações de persistência para dispositivos monitorados.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IEventoDnsRepositorio">
+            <summary>
+            Define operações de persistência de eventos DNS.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IFluxoRedeRepositorio">
+            <summary>
+            Define operações de persistência de fluxos de rede.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Repositorios.IUsuarioRepositorio">
+            <summary>
+            Define operações de persistência de usuários do sistema.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoAlertaRede">
+            <summary>
+            Orquestra consulta e tratamento de alertas.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoAuditoria">
+            <summary>
+            Orquestra persistência e consulta de auditoria.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoConfiguracaoSistema">
+            <summary>
+            Orquestra leitura e atualização das configurações do sistema.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoDashboard">
+            <summary>
+            Fornece dados agregados do dashboard.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoDispositivo">
+            <summary>
+            Orquestra operações de consulta e cadastro de dispositivos.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoEventoDns">
+            <summary>
+            Orquestra consultas e ingestão de eventos DNS.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoFluxoRede">
+            <summary>
+            Orquestra consultas e ingestão de fluxos de rede.
+            </summary>
+        </member>
+        <member name="T:MonitoramentoRede.Aplicacao.Contratos.Servicos.IServicoUsuario">
+            <summary>
+            Orquestra autenticação e administração de usuários.
+            </summary>
+        </member>
+    </members>
+</doc>

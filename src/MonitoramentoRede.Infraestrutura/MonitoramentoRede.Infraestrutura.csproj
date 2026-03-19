@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoramentoRede.Dominio\MonitoramentoRede.Dominio.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Aplicacao\MonitoramentoRede.Aplicacao.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Compartilhado\MonitoramentoRede.Compartilhado.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Infraestrutura</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+</Project>

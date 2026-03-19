@@ -1,0 +1,41 @@
+@page
+@using MonitoramentoRede.Dominio.Enums
+@model MonitoramentoRede.Web.Pages.DnsModel
+@{
+    ViewData["Title"] = "Eventos DNS";
+}
+
+<div class="painel mb-4">
+    <form method="get" class="row g-3">
+        <div class="col-md-3"><label class="form-label">Domínio</label><input asp-for="Filtro.Dominio" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">Dispositivo</label><input asp-for="Filtro.HostnameDispositivo" class="form-control" /></div>
+        <div class="col-md-2"><label class="form-label">Tipo</label><select asp-for="Filtro.TipoRegistro" class="form-select" asp-items="Html.GetEnumSelectList<TipoRegistroDns>()"><option value="">Todos</option></select></div>
+        <div class="col-md-2"><label class="form-label">Status</label><select asp-for="Filtro.StatusConsulta" class="form-select" asp-items="Html.GetEnumSelectList<StatusConsultaDns>()"><option value="">Todos</option></select></div>
+        <div class="col-md-2"><label class="form-label">Início</label><input asp-for="Filtro.InicioUtc" class="form-control" type="datetime-local" /></div>
+        <div class="col-md-1 d-flex align-items-end"><button type="submit" class="btn btn-primary w-100">Filtrar</button></div>
+    </form>
+    <div class="mt-3">
+        <a asp-page="/Dns" asp-page-handler="Exportar" asp-route-Dominio="@Model.Filtro.Dominio" asp-route-HostnameDispositivo="@Model.Filtro.HostnameDispositivo" class="btn btn-outline-success">Exportar CSV</a>
+    </div>
+</div>
+
+<div class="painel">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead><tr><th>Data</th><th>Dispositivo</th><th>Domínio</th><th>Tipo</th><th>Status</th><th>Tempo</th></tr></thead>
+            <tbody>
+            @foreach (var item in Model.Resultado.Itens)
+            {
+                <tr>
+                    <td>@item.DataEventoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.Dispositivo</td>
+                    <td>@item.Dominio</td>
+                    <td>@item.TipoRegistro</td>
+                    <td>@item.StatusConsulta</td>
+                    <td>@item.TempoRespostaMs ms</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+@page
+@using MonitoramentoRede.Dominio.Enums
+@model MonitoramentoRede.Web.Pages.AlertasModel
+@{
+    ViewData["Title"] = "Alertas";
+}
+
+<div class="painel mb-4">
+    <form method="get" class="row g-3">
+        <div class="col-md-3"><label class="form-label">Tipo</label><select asp-for="Filtro.Tipo" class="form-select" asp-items="Html.GetEnumSelectList<TipoAlerta>()"><option value="">Todos</option></select></div>
+        <div class="col-md-3"><label class="form-label">Severidade</label><select asp-for="Filtro.Severidade" class="form-select" asp-items="Html.GetEnumSelectList<SeveridadeAlerta>()"><option value="">Todas</option></select></div>
+        <div class="col-md-3"><label class="form-label">Status</label><select asp-for="Filtro.Status" class="form-select" asp-items="Html.GetEnumSelectList<StatusAlerta>()"><option value="">Todos</option></select></div>
+        <div class="col-md-3 d-flex align-items-end"><button type="submit" class="btn btn-primary w-100">Filtrar</button></div>
+    </form>
+</div>
+
+<div class="painel">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead><tr><th>Data</th><th>Título</th><th>Dispositivo</th><th>Severidade</th><th>Status</th><th>Observação</th><th></th></tr></thead>
+            <tbody>
+            @foreach (var item in Model.Resultado.Itens)
+            {
+                <tr>
+                    <td>@item.DataCriacaoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.Titulo</td>
+                    <td>@item.Dispositivo</td>
+                    <td>@item.Severidade</td>
+                    <td>@item.Status</td>
+                    <td>@item.ObservacaoOperador</td>
+                    <td>
+                        @if (item.Status != StatusAlerta.Resolvido && (User.IsInRole("Administrador") || User.IsInRole("Operador")))
+                        {
+                            <form method="post" asp-page-handler="Resolver" class="d-flex gap-2">
+                                <input type="hidden" name="Id" value="@item.Id" />
+                                <input type="text" name="ObservacaoOperador" class="form-control form-control-sm" placeholder="Observação" />
+                                <button type="submit" class="btn btn-sm btn-success">Resolver</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

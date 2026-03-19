@@ -1,0 +1,31 @@
+@page
+@model MonitoramentoRede.Web.Pages.Conta.LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - MonitoramentoRede</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="fundo-login">
+    <div class="card card-login shadow">
+        <div class="card-body p-4">
+            <h1 class="h3 mb-3">Acesso ao MonitoramentoRede</h1>
+            @if (!string.IsNullOrWhiteSpace(Model.MensagemErro))
+            {
+                <div class="alert alert-danger">@Model.MensagemErro</div>
+            }
+            <form method="post">
+                <div class="mb-3"><label class="form-label">Login</label><input asp-for="Entrada.Login" class="form-control" /></div>
+                <div class="mb-3"><label class="form-label">Senha</label><input asp-for="Entrada.Senha" class="form-control" type="password" /></div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

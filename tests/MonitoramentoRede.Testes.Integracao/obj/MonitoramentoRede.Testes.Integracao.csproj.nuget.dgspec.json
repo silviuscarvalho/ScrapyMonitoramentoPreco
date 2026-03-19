@@ -1,0 +1,467 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\tests\\MonitoramentoRede.Testes.Integracao\\MonitoramentoRede.Testes.Integracao.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj",
+        "projectName": "MonitoramentoRede.Aplicacao",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj",
+        "projectName": "MonitoramentoRede.Compartilhado",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj",
+        "projectName": "MonitoramentoRede.Dominio",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\MonitoramentoRede.Infraestrutura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\MonitoramentoRede.Infraestrutura.csproj",
+        "projectName": "MonitoramentoRede.Infraestrutura",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\MonitoramentoRede.Infraestrutura.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Dominio\\MonitoramentoRede.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\MonitoramentoRede.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\MonitoramentoRede.Web.csproj",
+        "projectName": "MonitoramentoRede.Web",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\MonitoramentoRede.Web.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Aplicacao\\MonitoramentoRede.Aplicacao.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\MonitoramentoRede.Infraestrutura.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Infraestrutura\\MonitoramentoRede.Infraestrutura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\tests\\MonitoramentoRede.Testes.Integracao\\MonitoramentoRede.Testes.Integracao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\tests\\MonitoramentoRede.Testes.Integracao\\MonitoramentoRede.Testes.Integracao.csproj",
+        "projectName": "MonitoramentoRede.Testes.Integracao",
+        "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\tests\\MonitoramentoRede.Testes.Integracao\\MonitoramentoRede.Testes.Integracao.csproj",
+        "packagesPath": "C:\\Users\\silvius.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\tests\\MonitoramentoRede.Testes.Integracao\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\silvius.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Compartilhado\\MonitoramentoRede.Compartilhado.csproj"
+              },
+              "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\MonitoramentoRede.Web.csproj": {
+                "projectPath": "C:\\Users\\silvius.carvalho\\Documents\\Projetos\\monitoramenteRede\\src\\MonitoramentoRede.Web\\MonitoramentoRede.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.19, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

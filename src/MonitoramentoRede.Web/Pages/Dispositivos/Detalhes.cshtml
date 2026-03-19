@@ -1,0 +1,91 @@
+@page "{id:long}"
+@model MonitoramentoRede.Web.Pages.Dispositivos.DetalhesModel
+@{
+    ViewData["Title"] = "Detalhes do dispositivo";
+}
+
+@if (Model.Detalhes?.Dispositivo is null)
+{
+    <div class="alert alert-warning">Dispositivo não encontrado.</div>
+}
+else
+{
+    <div class="painel mb-4">
+        <div class="row g-3">
+            <div class="col-md-3"><strong>Hostname:</strong> @Model.Detalhes.Dispositivo.Hostname</div>
+            <div class="col-md-3"><strong>IP:</strong> @Model.Detalhes.Dispositivo.Ip</div>
+            <div class="col-md-3"><strong>MAC:</strong> @Model.Detalhes.Dispositivo.Mac</div>
+            <div class="col-md-3"><strong>Status:</strong> @Model.Detalhes.Dispositivo.Status</div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="painel">
+                <h2 class="h5">Top domínios</h2>
+                <ul class="list-group list-group-flush">
+                @foreach (var item in Model.Detalhes.TopDominios)
+                {
+                    <li class="list-group-item d-flex justify-content-between"><span>@item.Dominio</span><span>@item.Total</span></li>
+                }
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="painel">
+                <h2 class="h5">Top destinos</h2>
+                <ul class="list-group list-group-flush">
+                @foreach (var item in Model.Detalhes.TopDestinos)
+                {
+                    <li class="list-group-item d-flex justify-content-between"><span>@item.Destino</span><span>@item.Total</span></li>
+                }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="painel mt-4">
+        <h2 class="h5">Eventos DNS</h2>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead><tr><th>Data</th><th>Domínio</th><th>Tipo</th><th>Status</th></tr></thead>
+                <tbody>
+                @foreach (var item in Model.Detalhes.EventosDns)
+                {
+                    <tr><td>@item.DataEventoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td><td>@item.Dominio</td><td>@item.TipoRegistro</td><td>@item.StatusConsulta</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="painel mt-4">
+        <h2 class="h5">Fluxos de rede</h2>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead><tr><th>Data</th><th>Destino</th><th>Porta</th><th>Bytes</th></tr></thead>
+                <tbody>
+                @foreach (var item in Model.Detalhes.FluxosRede)
+                {
+                    <tr><td>@item.DataInicioUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td><td>@item.IpDestino</td><td>@item.PortaDestino</td><td>@(item.BytesEnviados + item.BytesRecebidos)</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="painel mt-4">
+        <h2 class="h5">Alertas vinculados</h2>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead><tr><th>Data</th><th>Título</th><th>Severidade</th><th>Status</th></tr></thead>
+                <tbody>
+                @foreach (var item in Model.Detalhes.Alertas)
+                {
+                    <tr><td>@item.DataCriacaoUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td><td>@item.Titulo</td><td>@item.Severidade</td><td>@item.Status</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

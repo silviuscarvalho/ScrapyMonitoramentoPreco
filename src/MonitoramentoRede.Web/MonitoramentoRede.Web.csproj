@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonitoramentoRede.Aplicacao\MonitoramentoRede.Aplicacao.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Infraestrutura\MonitoramentoRede.Infraestrutura.csproj" />
+    <ProjectReference Include="..\MonitoramentoRede.Compartilhado\MonitoramentoRede.Compartilhado.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RootNamespace>MonitoramentoRede.Web</RootNamespace>
+  </PropertyGroup>
+
+</Project>
