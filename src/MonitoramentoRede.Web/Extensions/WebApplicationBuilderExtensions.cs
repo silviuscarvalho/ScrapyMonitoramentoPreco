@@ -17,6 +17,7 @@ public static class WebApplicationBuilderExtensions
             options.Conventions.AllowAnonymousToPage("/Error");
             options.Conventions.AuthorizeFolder("/Administracao", PerfisSistema.Administrador);
         });
+        
 
         builder.Services.AddControllers();
         builder.Services.AddSignalR();
